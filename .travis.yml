@@ -1,0 +1,27 @@
+---
+language: go
+go:
+- "1.11.x"
+- "1.12.x"
+- "1.13.x"
+
+sudo: false
+dist: trusty
+
+env:
+  global:
+  - GO111MODULE=on
+
+before_install:
+- go get -u golang.org/x/lint/golint
+
+# Prevent travis from downloading dependencies with `go get`.
+install: true
+
+script:
+- golint ./...
+- go vet ./...
+- go test ./...
+
+notifications:
+  email: false
