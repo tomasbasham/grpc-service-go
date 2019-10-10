@@ -1,4 +1,4 @@
-# grpc-service-go
+# grpc-service-go [![Build Status](https://travis-ci.com/tomasbasham/grpc-service-go.svg?branch=master)](https://travis-ci.com/tomasbasham/grpc-service-go)
 
 This README outlines the details of collaborating on this Go application. A
 short introduction of this app could easily go here.
